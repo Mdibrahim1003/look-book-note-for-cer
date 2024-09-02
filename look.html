@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Log Book</title>
+    <link rel="stylesheet" href="lookcs.css">
+</head>
+<body>
+    <div class="container">
+        <h1>লগ বই</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>তারিখ</th>
+                    <th>ফরমাশ লোডার নাম ও পদবি</th>
+                    <th>হাইড</th>
+                    <th>বাহির হওয়ার সময়</th>
+                    <th>গন্তব্য স্থান</th>
+                    <th>ক্রমিক কারবারের সময়</th>
+                    <th>কি কারণে গাড়ী ব্যবহার করা হয়েছে</th>
+                    <th>মাইল মিটার যাত্রার সময়</th>
+                    <th>মাইল মিটার আসার সময়</th>
+                    <th>মোট</th>
+                    <th>গাড়ী ব্যবহারকারীর স্বাক্ষর, ছাড়ার সময় ও তারিখ</th>
+                    <th>পূর্ব জমা</th>
+                    <th>সরবরাহ</th>
+                    <th>খরচ</th>
+                    <th>মজুদ</th>
+                </tr>
+            </thead>
+            <tbody id="log-entries">
+                <tr>
+                    <td><input type="date"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="time"></td>
+                    <td><input type="text"></td>
+                    <td><input type="time"></td>
+                    <td><input type="text"></td>
+                    <td><input type="number" class="mile-meter-start"></td>
+                    <td><input type="number" class="mile-meter-end"></td>
+                    <td><input type="number" class="total-miles" readonly></td>
+                    <td><input type="text"></td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                </tr>
+            </tbody>
+        </table>
+        <button onclick="addRow()">Add Row</button>
+        <button onclick="printPage()">Print</button>
+    </div>
+    <script src="lookjs.js"></script>
+</body>
+</html>
